@@ -1,4 +1,4 @@
-# CS348-Final-Project
+# Final-Project
 
 # Recursive DNS Resolver - Team Structure and Organization
 
