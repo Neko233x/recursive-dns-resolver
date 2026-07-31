@@ -2,8 +2,8 @@
 
 # Recursive DNS Resolver - Team Structure and Organization
 
-## Team Member 1: Query Initiator & Client Interface
-**Responsibilities:**
+## Query Initiator & Client Interface
+
 - Implement the initial query handling from client
 - Create the interface for receiving DNS requests
 - Handle initial communication with local DNS server
@@ -14,8 +14,8 @@
 - ClientInterface.java
 - Unit tests for query initiation
 
-## Team Member 2: Recursive Resolution Logic
-**Responsibilities:**
+## Recursive Resolution Logic
+
 - Implement the core recursive resolution logic
 - Handle the step-by-step resolution process
 - Manage the sequence of queries to different DNS servers
@@ -26,8 +26,8 @@
 - ResolutionChain.java
 - Unit tests for recursive logic
 
-## Team Member 3: Server Communication
-**Responsibilities:**
+## Server Communication
+
 - Handle communication with different DNS servers
 - Implement connections to root DNS servers
 - Manage TLD server communications
@@ -38,8 +38,8 @@
 - DNSServerConnector.java
 - Connection tests
 
-## Team Member 4: Response Handler
-**Responsibilities:**
+## Response Handler
+
 - Process responses from each DNS server
 - Handle intermediate responses in the recursive chain
 - Manage final response compilation
@@ -50,7 +50,7 @@
 - ResponseProcessor.java
 - Error handling tests
 
-## Team Member 5: Integration Lead
+## Integration Lead
 **Responsibilities:**
 - Coordinate between all components
 - Ensure proper flow of recursive resolution
@@ -76,13 +76,6 @@ graph TD
     E --> C
     E --> D
 ```
-
-## Development Timeline
-1. Week 1: Query initiation and basic structure
-2. Week 2: Recursive resolution logic
-3. Week 3: Server communication
-4. Week 4: Response handling
-5. Week 5: Integration and testing
 
 ## Integration Points
 - Query Initiator → Recursive Resolver: Pass initial query
